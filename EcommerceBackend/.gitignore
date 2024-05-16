@@ -1,0 +1,3 @@
+.env
+configs/server.config.js
+node_modules
