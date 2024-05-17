@@ -14,12 +14,12 @@ const createNewCategory = async (req, res) => {
 	};
 	// insert into database
 	try {
-        const categoryObj = await category_model.create(category);
-        return res.status(201).json({ message: 'category created successfully', categoryObj });
+		const categoryObj = await category_model.create(category);
+		return res.status(201).json({ message: 'category created successfully', categoryObj });
 	} catch (error) {
-        console.log('error while creating category', error.message);
-        return res.status(500).json({ message: 'error while creating category' });
-    }
+		console.log('error while creating category', error.message);
+		return res.status(500).json({ message: 'error while creating category' });
+	}
 	// return the response
 };
 

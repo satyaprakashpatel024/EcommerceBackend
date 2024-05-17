@@ -80,6 +80,7 @@ const isAdmin = async (req, res, next) => {
 	}
 	next();
 };
+
 module.exports = {
 	verifySignupData,
 	verifySigninData,

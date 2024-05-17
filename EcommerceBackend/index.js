@@ -49,8 +49,8 @@ app.get('/', (req, res) => {
 	res.send('Hello World');
 });
 
-app.use('/ecomm/api/v1/auth',authRoutes);
-app.use('/ecomm/api/v1',categoryRoutes);
+app.use('/ecomm/api/v1/auth', authRoutes);
+app.use('/ecomm/api/v1', categoryRoutes);
 
 app.listen(server_config.PORT, () => {
 	console.log(`server is runing at http://localhost:${server_config.PORT}`);
